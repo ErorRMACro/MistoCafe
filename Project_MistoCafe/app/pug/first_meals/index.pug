@@ -1,0 +1,36 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Перші страви - Misto Cafe
+    meta(name='description' content='Замовити перші страви у Misto Cafe. Доставка перших страв у Вишневе, Крюківщина, Гатне. Готуємо перші страви/супи на ваш смак та вибір, такі як борщ, солянка, бульон та крем-суп. Подаємо з тостами!')
+    meta(name='keywords' content='перша страва замовити, суп замовити, замовити першу страву, ресторан перші страви, супи доставка вишневе, супи доставка крюківщина, борщ замовити, бульон замовити, борщ доставка, суп з тостами замовити')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/first_meals-bg.jpg);')
+    section.products
+      .container
+        h3.products__title
+          | ПЕРШІ СТРАВИ
+          span.products__title-subtitle подаємо з тостами
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/first_meals/soup-card.png', 'Бульон курячий із локшиною та яйцем', '', '350/40', '60')
+
+          +productCard('../img/first_meals/soup-card.png', 'Борщ червоний / зелений', 'З домашнім салом та сметаною', '350/30/30/40', '85')
+
+          +productCard('../img/first_meals/soup-card.png', 'Сирний крем-суп / грибний крем-суп', '', '350/40', '75')
+
+          +productCard('../img/first_meals/soup-card.png', "Солянка збірна м'ясна зі сметаною", '', '350/30/40', '80')
+
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

@@ -1,0 +1,49 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Гарячі страви - Misto Cafe
+    meta(name='description' content='Замовити гарячі страви у Misto Cafe. Доставка у Вишневе, Крюківщина, Гатне. Ковбаски bbq, дерунчки зі сметаною, шніцель з телятини або філе ніжної сьомги - Все це та інше Ви можете замовити у нас! Кожна страва сбалансована гарніром, соусом та овочами!')
+    meta(name='keywords' content='гарячі страви з ресторану, гарячі страви замовити, доставка гарячих страв, гарячі страви вишневе, гарячі страви вишневе доставка, гарячі страви крюківщина, гарячі страви крюківщина доставка, телятина замовити, барбекю замовити, котлети замовити, філе замовити')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/hot_meals-bg.jpg);')
+    section.products
+      .container
+        h3.products__title
+          | УЛЮБЛЕНІ ГАРЯЧІ СТРАВИ
+          span.products__title-subtitle
+            | кожна страва сбалансована гарніром, соусом та овочами
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/hot_meals/bbq-card.jpg', 'Ковбаски ВВQ власного виробництва на вибір', 'Індичка / Телятина з копченою журавлиною / Баварська / Баранина. Подається з картоплею  та соусами: гірчиця та барбекю', '150/100/20/20', '125')
+
+          +productCard('../img/hot_meals/deruny-card.jpg', 'Дерунчики', 'З грибами та сметаною', '200/50/40', '95')
+
+          +productCard('../img/hot_meals/schnitzel-card.jpg', 'Шніцель', 'З телятини, з картоплею та сирним соусом', '300', '95')
+
+          +productCard('../img/hot_meals/cutlet-card.jpg', 'Котлета пожарська', 'З індички із овочевим пюре', '300', '155')
+
+          +productCard('../img/hot_meals/ribs-card.jpg', 'Реберця свинини', 'У томатно-медовому соусі з картоплею та кукурудзою', '400', '175')
+
+          +productCard('../img/hot_meals/veal-card.jpg', 'Каре телятини', 'З овочевим гарніром та томатним соусом', '100*/100', '105')
+
+          +productCard('../img/hot_meals/banderapan-card.jpg', 'Пательня "Бандерівська"', "Піджарка картоплі з м'ясом", '350', '145')
+
+          +productCard('../img/hot_meals/unwedpan-card.jpg', 'Пательня "Холостяцька"', "Картопля з беконом запечена під сиром", '350', '135')
+
+          +productCard('../img/hot_meals/semga-card.jpg', 'Філе сьомги', "Зі шпинатним пюре", '300', '220')
+
+          +productCard('../img/hot_meals/sote-card.jpg', 'Соте з морепродуктами', "Креветки, кальмари, мідії, бейбі восьминіжки у ніжному вершковому соусі, подаємо із підсушеними тостами", '350/60', '275')
+
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

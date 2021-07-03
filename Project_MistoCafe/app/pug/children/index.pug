@@ -1,0 +1,35 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Страви для діточок - Misto Cafe
+    meta(name='description' content='Замовити страву для діточок у Misto Cafe. Доставка у Вишневе, Крюківщина, Гатне. Пропонуємо смачні страви, котрі підходять для діточок, такі як курячий шашличок чи корн-дог.')
+    meta(name='keywords' content='страви для дітей, страви для дітей замовити, доставка дитяча їжа, дитяча їжа, замовити дитячу їжу, корн-дог замовити, курячий шашлик замовити, мітболи замовити')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/children-bg.jpg);')
+    section.products
+      .container
+        .products__title
+          | ДЛЯ  ДІТОЧОК		
+          span.products__title-subtitle
+            | гарнір на вибір : пюре / фрі / спагетті
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/children/corn-dog-example.jpg', '"ПРИГОДИ Міньйона"', 'Корн-дог', '100/150', '95')
+
+          +productCard('../img/children/skewer-card.png', '"КУРОЧКА РЯБА"', 'Курячий шашличок', '100/150', '88')
+
+          +productCard('../img/children/meatballs-card.jpg', '"СМІШАРИКИ"', 'Міт боли у соусі (томатний/вершковий)', '100/150', '90')
+
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

@@ -1,0 +1,54 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Закуски до пива - Misto Cafe
+    meta(name='description' content='Замовити закуски до пива у Misto Cafe. Доставка закусок у Вишневе, Крюківщина, Гатне. У нас є все, що потрібно до пива! Курячі крильця та фріто-снеки на ваш вибір, до кожної страви соус на вибір: ВВQ, тар-тар, кисло-солодкий.')
+    meta(name='keywords' content='закуски до пива, снеки, снеки до пива, закуски до пива замовити, замовити снеки, сухарики замовити, курячі крильця доставка, достака снеків вишневе, достака снеків крюківщина, замовити нагетси, замовити сирні палички')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/beer-bg.jpg);')
+    section.products
+      .container
+        h3.products__title ЗАКУСКИ ТА СНЕКИ ДО ПИВА
+        .products__content.products__content--no-padding
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/beer/chickenwings-card.jpg', 'Курячі крильця Світ Чілі', '', '250', '115')
+
+        h3.products__title
+          | ФРІТО-СНЕКИ
+          span.products__title-subtitle до кожної страви соус на вибір: ВВQ, тар-тар, кисло-солодкий
+
+        .products__content
+
+          +productCard('../img/beer/onionrings-card.jpg', 'Кільця цибулеві', '', '100', '45')
+
+          +productCard('../img/beer/anchovy-card.png', 'Анчоуси-хрустики', '', '100', '45')
+
+          +productCard('../img/beer/crackers-card.jpg', 'Сухарики фірмові з Пармезаном', '', '150', '65')
+
+          +productCard('../img/beer/pigears-card.png', 'Вушка підкопчені мариновані', '', '100', '60')
+
+          +productCard('../img/beer/potatoefree-card.jpg', 'Картопля фрі', '', '150', '55')
+
+          +productCard('../img/beer/cheese-sticks-card.jpg', 'Сирні палички', '', '100', '75')
+
+          +productCard('../img/beer/squidfree-card.jpg', 'Кальмари фрі', '', '100', '75')
+
+          +productCard('../img/beer/panko-card.jpg', 'Креветки Панко', '', '100', '135')
+
+          +productCard('../img/beer/nuggets-card.jpg', 'Курячі нагетси', '', '100', '65')
+
+    include ../includes/footer.pug
+
+    script(src='../js/main.min.js')

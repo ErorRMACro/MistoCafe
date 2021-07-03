@@ -1,0 +1,39 @@
+mixin pizzaCard(Icondisplay, iconImage, iconDescr, image, title, description, valueSmall, valueBig)
+  .products__content-item
+    .products__content-item-img-block
+      .products__content-item-additional
+        img(src='../img/pizza-icon.png' alt='')
+      .products__content-item-prompt
+        .prompt-icon(style=Icondisplay)
+          img(src=iconImage alt='')
+          .prompt-icon__text= iconDescr
+    .products__content-item-container
+      .products__content-item-img
+        img(src=image alt='')
+      h3.products__content-item-title= title
+      p.products__content-item-text= description
+      .products__content-item-descr
+        .products__content-item-descr-column
+          .products__content-item-descr-column-size 35см
+          .products__content-item-descr-column-value= valueSmall
+            span ГРН
+        .products__content-item-descr-column
+          .products__content-item-descr-column-size 45см
+          .products__content-item-descr-column-value= valueBig
+            span ГРН
+      button.products__content-item-btn ЗАМОВИТИ
+
+mixin productCard(image, title, description, weight, value)
+  .products__content-item
+    .products__content-item-container
+      .products__content-item-img
+         img(src=image alt='')
+      h3.products__content-item-title= title
+      p.products__content-item-text= description
+      .products__content-item-descr
+        .products__content-item-descr-column
+          .products__content-item-descr-column-scale= weight
+             span гр
+          .products__content-item-descr-column-value= value
+             span ГРН
+      button.products__content-item-btn ЗАМОВИТИ

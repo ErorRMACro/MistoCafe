@@ -1,0 +1,37 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Бургери - Misto Cafe
+    meta(name='description' content='Замовити бургери у Misto Cafe. Доставка бургерів у Вишневе, Крюківщина, Гатне. Доставка фірмових бургерів від сімейного ресторану Misto Cafe! Подаємо з картоплею фрі із соусом ВВQ або кетчупом.')
+    meta(name='keywords' content='доставка бургерів, бургери доставка, бургер, бургери, замовити бургер, бургер замовити, замовити бургер вишневе, замовити бургер крюківщина, бургери доставка вишневе, бургери доставка крюківщина, бургер з картоплею фрі, бургер та картопля фрі замовити, замовити бургер та картуплю фрі')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/burger-bg.jpg);')
+    section.products
+      .container
+        .products__title
+          | БУРГЕРИ
+          span.products__title-subtitle
+            | подаємо з картоплею фрі із соусом ВВQ або кетчупом
+        .products__content
+
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+          
+          +productCard('../img/burgers/burger-card.png', 'Фірмовий MistoR БІГ Бургер', "Біф Бургер із котлетою з витриманої гов'ядини, соковито-хрустким беконом, сиром Чедер, соусом Цезар, листям салату та помідором", '1400', '550')
+          
+          +productCard('../img/burgers/burger-card.png', 'Бургер Біф', "Біф Бургер із котлетою з витриманої гов'ядини", '250/130/30', '165')
+
+          +productCard('../img/burgers/burger-card.png', 'Бургер Чикен "Цезар"', "Зі стейком філе курча, беконом, листям салату, соусом Цезар", '250/130/30', '145')
+
+    include ../includes/footer.pug
+
+    script(src='../js/main.min.js')

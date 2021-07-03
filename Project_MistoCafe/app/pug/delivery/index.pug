@@ -1,0 +1,56 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Доставка їжі з ресторану Misto Cafe | Доставка в Вишневе, Крюківщину
+    meta(name='decription' content='Доставка піци, бургерів, гарячих страв, салатів, солодкого та закусок до пива. Скидка -50% на другу піцу у разі самовиносу. Працюємо 7 днів з 12:00 по 23:00. Доставка в Вишневе, Крюківщину та Гатне.')
+    meta(name='keywords' content='доставка їжі, доставка їжі вишневе, доставка їжі крюківщина, замовити їжу, замовити їжу вишневе, замовити їжу крюківщина, їжа з ресторана, доставка з ресторана, доставка з ресторана вишневе, доставка з ресторана крюківщина, замовити піцу, замовити бургер, бургери доставка, закуси до пива, солодке доставка, замовити солодке, салати доставка, замовити салат, пательні, пательня, замовити пательню, пательні доставка, супи, супи доставка, замовити суп')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/logo-bg.png);')
+    section.delivery
+      .container
+        .delivery__content
+          .delivery__content-title Доставка і оплата
+          .delivery__content-item
+            .delivery__content-item-title
+              | Точка самовиносу:
+            .delivery__content-item-location
+              | Ресторан у сімейному стилі "
+              span Misto Cafe
+              | "
+            .delivery__content-item-location-address
+              | с. Крюківщина, ЖК Євромісто, вул Жулянська, 1В
+              span
+                a(href='.map') Дивитись на карті
+          .delivery__content-item
+            .delivery__content-item-title Доставка
+            .delivery__content-item-info
+              p Режим роботи служби доставки:
+              p Понеділок - Неділя з 11:00 до 23:00
+            h3.item-delivery__content-title
+              | Безкоштовна доставка діє при замовленні від 250 грн.
+            h4.item-delivery__content-text
+              | Для жителів ЖК Євромісто - доставка безкоштовна!
+          .delivery__content-item
+            .delivery__content-item-title Оплата замовлення
+            .delivery__content-item-info
+              ul
+                li готівкою кур'єру
+                li через термінал кур'єрові
+          .delivery__content-item
+            .delivery__content-item-title Регіони доставки
+            .delivery__content-item-info
+              ul
+                li Крюківщина
+                li Вишневе
+                li Гатне
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')
