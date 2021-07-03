@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піца - Misto Cafe</title>
+    <meta name="description" content="Замовити піцу у Misto Cafe. Доставка піци у Вишневе, Крюківщина, Гатне. Унікальний рецепт тіста піци, Сирний бортик, М'ясні, Сирні, Вегетаріанські, Рибні піци на ваш смак та вибір!">
+    <meta name="keywords" content="доставка піци, піца доставка, піца, Піца, піцерія, піцерія вишневе, піцерія крюківщина, замовити піцу, піца замовити, замовити піцу вишневе, замовити піцу крюківщина, піцерія доставка вишневе, піцерія доставка крюківщина, м'ясна піца, піца з м'ясом, сирна піца, піца з сиром, вегетаріанська піца, рибна піца, піца з рибою, піца з сирним бортиком, сирний бортик піца, сирний бортик, піца до пива, гостра піца, піца з половинок, піца два смаки, піца з двома смаками, тонке тісто, піца з тонким тістом">
+    <link rel="icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&amp;family=Nunito:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <menu class="menu">
+            <div class="menu__list">
+              <div class="menu__list-item menu__list-item--discounts menu__list-item--animation">
+                <svg class="menu__list-item-graphic menu__list-item-graphic--stroke menu__list-item-graphic--arc" height="72" viewBox="0 0 207 71" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M186.781 1H20.2188C9.11466 1 1.00011 10 1.00013 23V48C1.00014 56.0001 5.69799 70 20.2188 70H186.781C202.583 70 206 56.0001 206 48V23C206 13.5 199.167 1 186.781 1Z" pathLength="1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><a class="menu__list-item-link" href="https://mistocafe.com.ua/stocks/"><span>акції</span></a>
+                <div class="menu__list-item-window">
+                  <div class="menu__list-item-window-content">
+                    <div class="menu__list-item-window-content-discount-text">2-га пiца зi знижкою -50% у разі самовиносу!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__list-item menu__list-item--menu menu__list-item--animation">
+                <svg class="menu__list-item-graphic menu__list-item-graphic--stroke menu__list-item-graphic--arc" height="72" viewBox="0 0 207 71" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M186.781 1H20.2188C9.11466 1 1.00011 10 1.00013 23V48C1.00014 56.0001 5.69799 70 20.2188 70H186.781C202.583 70 206 56.0001 206 48V23C206 13.5 199.167 1 186.781 1Z" pathLength="1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><a class="menu__list-item-link" href="https://mistocafe.com.ua/"><span>меню</span></a>
+                <div class="menu__list-item-window">
+                  <div class="menu__list-item-window-content">
+                    <div class="menu__list-item-window-content-menu-list">
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/pizza/">піца</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/burgers/">бургери</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/beer/">до пива</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/pans/">пательні</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/salats/">салати</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/pasta/">пасти</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/first_meals/">перше</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/hot_meals/">гарячі</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/sweets/">солодке</a></div>
+                      <div class="menu__list-item-window-content-menu-list-item"><a href="https://mistocafe.com.ua/children/">дитяче</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__list-item menu__list-item--delivery menu__list-item--animation">
+                <svg class="menu__list-item-graphic menu__list-item-graphic--stroke menu__list-item-graphic--arc" height="72" viewBox="0 0 242 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M218.5 1H23.5001C10.5001 1 1.0001 10 1.00013 23V48C1.00015 56.0001 6.50006 70 23.5001 70H218.5C237 70 241 56.0001 241 48V23C241 13.5 233 1 218.5 1Z" pathLength="1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><a class="menu__list-item-link" href="https://mistocafe.com.ua/delivery/"><span>доставка</span></a>
+                <div class="menu__list-item-window">
+                  <div class="menu__list-item-window-content">
+                    <div class="menu__list-item-window-content-delivery-title">Безкоштовна доставка діє при замовленні від 250 грн.</div>
+                    <div class="menu__list-item-window-content-delivery-additional">Для жителів ЖК Євромісто - доставка безкоштовна!</div>
+                  </div>
+                </div>
+              </div>
+              <div class="menu__list-item menu__list-item--contacts menu__list-item--animation">
+                <svg class="menu__list-item-graphic menu__list-item-graphic--stroke menu__list-item-graphic--arc" height="72" viewBox="0 0 242 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M218.5 1H23.5001C10.5001 1 1.0001 10 1.00013 23V48C1.00015 56.0001 6.50006 70 23.5001 70H218.5C237 70 241 56.0001 241 48V23C241 13.5 233 1 218.5 1Z" pathLength="1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><a class="menu__list-item-link"><span>контакти</span></a>
+                <div class="menu__list-item-window">
+                  <div class="menu__list-item-window-content"><a class="menu__list-item-window-content-phone" href="tel:+380673030653">+38 067 303 06 53</a><a class="menu__list-item-window-content-phone" href="tel:+380957341718">+38 095 734 17 18</a>
+                    <div class="menu__list-item-window-content-social">
+                      <div class="menu__list-item-window-content-social-item"><a href="https://t.me/FamilyMistoCafe"><img src="https://mistocafe.com.ua/img/telegram-icon-navbar.svg" alt=""></a></div>
+                      <div class="menu__list-item-window-content-social-item"><a href="viber://chat?number=%2B380673030653"><img src="https://mistocafe.com.ua/img/viber-icon.svg" alt=""></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </menu>
+          <div class="menu-mobile-contacts">
+            <div class="close-btn">
+              <div class="close-btn__row close-btn__row--1"></div>
+              <div class="close-btn__row close-btn__row--2"></div>
+            </div>
+            <div class="menu-mobile-contacts__content"><a class="menu__list-item-window-content-phone" href="tel:+380673030653">+38 067 303 06 53</a><a class="menu__list-item-window-content-phone" href="tel:+380957341718">+38 095 734 17 18</a>
+              <div class="menu__list-item-window-content-social">
+                <div class="menu__list-item-window-content-social-item"><a href="https://t.me/FamilyMistoCafe"><img src="https://mistocafe.com.ua/img/telegram-icon-navbar.svg" alt=""></a></div>
+                <div class="menu__list-item-window-content-social-item"><a href="viber://chat?number=%2B380673030653"><img src="https://mistocafe.com.ua/img/viber-icon.svg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-mobile-btn">
+            <div class="menu-mobile-btn__row menu-mobile-btn__row--1"></div>
+            <div class="menu-mobile-btn__row menu-mobile-btn__row--2"></div>
+            <div class="menu-mobile-btn__row menu-mobile-btn__row--3"></div>
+          </div>
+        </nav>
+      </div>
+      <div class="body-overlay"></div>
+    </header>
+    <div class="modal-order">
+      <div class="modal-order__body-overlay"></div>
+      <div class="modal-order__content">
+        <div class="close-btn modal-order__close-btn">
+          <div class="close-btn__row close-btn__row--1"></div>
+          <div class="close-btn__row close-btn__row--2"></div>
+        </div>
+        <div class="modal-order__content-title">
+          <p>Зробіть своє замовлення через один із месенджерів або зателефонувавши нам по номеру телефона</p>
+        </div>
+        <div class="modal-order__content-phone">
+          <div class="modal-order__content-phone-item"><a href="tel:+380673030653">+38 067 303 06 53</a></div>
+          <div class="modal-order__content-phone-item"><a href="tel:+380957341718">+38 095 734 17 18</a></div>
+        </div>
+        <div class="modal-order__content-social">
+          <div class="modal-order__content-social-item"><a class="modal-order__content-social-item-link" href="https://t.me/FamilyMistoCafe"><img src="https://mistocafe.com.ua/img/telegram-icon-navbar.svg" alt=""></a>
+            <div class="modal-order__content-social-item-title">Наш чат в Telegram</div>
+          </div>
+          <div class="modal-order__content-social-item"><a class="modal-order__content-social-item-link" href="viber://chat?number=%2B380673030653"><img src="https://mistocafe.com.ua/img/viber-icon.svg" alt=""></a>
+            <div class="modal-order__content-social-item-title">Наш чат в Viber</div>
+          </div>
+        </div>
+        <div class="modal-order__content-graditude">Дякуємо, що обрали MistoCafe! :)</div>
+      </div>
+    </div>
+    <div class="scroll-btn"><a class="scroll-btn__link" href=".header"><img src="../img/scroll-btn.svg" alt=""></a></div>
+        <div class="header__logo" style="background-image: url(../img/backgrounds/pizza-bg.jpg);">
+          <div class="container">
+            <div class="logo"><img src="https://mistocafe.com.ua/img/logo.png" alt=""></div>
+          </div>
+        </div>
+    <section class="offer">
+      <div class="container">
+        <div class="offer__content">
+          <div class="offer__titles">
+            <h1 class="offer__text-title">
+              ФІРМОВА пропозиція — два улюблених
+              смаки поєднуй в одній <span>PIZZA</span>!
+            </h1><img src="../img/heart.png" alt="">
+            <div class="offer__text-subtitle">Кожна піца має право на СИРНИЙ БОРТИК<span>
+                <p>80 грам/40 грн</p>
+                <p>120 грам/60 грн</p></span></div>
+          </div>
+          <div class="offer__stock"><img class="offer__stock-img" src="../img/try.png" alt="">
+            <div class="offer__stock-text">2-га пiца зi знижкою -50% у разі самовиносу!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products products--pizza">
+      <div class="container">
+        <div class="products__content">
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/salami-card.jpg" alt=""></div>
+                        <h3 class="products__content-item-title">Салямі</h3>
+                        <p class="products__content-item-text">Моцарела фермерська, соус Помодоріні, томати, салямі Мілано</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">195<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">295<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/vegetarian-icon.png" alt="">
+                            <div class="prompt-icon__text">вегетаріанська</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/margarita-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Маргарита Капрезе</h3>
+                        <p class="products__content-item-text">Моцарела Буфало, моцарела фермерська, соус Помодоріні, томати</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">145<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">210<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/fish-icon.png" alt="">
+                            <div class="prompt-icon__text">морепродукти</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/gambaretti-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Гамбаретті</h3>
+                        <p class="products__content-item-text">Соус Помодоріні, два види Моцарели: фермерська та розсільна, помідори, рукола та креветки</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">245<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">355<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/vegetarian-icon.png" alt="">
+                            <div class="prompt-icon__text">вегетаріанська</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/trufalie-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Трюфальє</h3>
+                        <p class="products__content-item-text">Моцарела, вершковий Песто, паста з маслин із трюфельною ароматною олією</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">195<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">290<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/beer-icon.png" alt="">
+                            <div class="prompt-icon__text">смакує до пива</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/bavarian-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Баварська</h3>
+                        <p class="products__content-item-text">Ковбаски баварські, сосиски мюнхенські, моцарела фермерська, соус Помодоріні, огірок солоний, цибуля, соус гірчичний</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">185<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">280<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/proshugo-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Прошуто Фунгі</h3>
+                        <p class="products__content-item-text">Шинка, моцарела, гриби, бекон, соус Помодоріні, синя цибуля</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">190<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">285<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/spicy-icon.png" alt="">
+                            <div class="prompt-icon__text">гострий смак</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/paperoni-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Папероні</h3>
+                        <p class="products__content-item-text">Салямі пікантна Наполі, моцарела, соус Помодоріні, перець болгарський, Табаско</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">190<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">280<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/kaprichio-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Капрічо</h3>
+                        <p class="products__content-item-text">Шинка, курка маринована, гриби, томати, цибуля, моцарела, соус Помодоріні, запікається з яйцем</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">190<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">280<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/seasonspizza-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Чотири сезони</h3>
+                        <p class="products__content-item-text">Бекон, шинка, гриби, артішок, маслини, соус Помодоріні, моцарела</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">210<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">320<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/fish-icon.png" alt="">
+                            <div class="prompt-icon__text">морепродукти</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/tuna-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Туна</h3>
+                        <p class="products__content-item-text">Моцарела, тунець, кримська цибуля, соус Помодоріні, моцарела росільна, оливки, рукола</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">197<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">295<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/pestopolo-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Песто Поло</h3>
+                        <p class="products__content-item-text">Філе курча, вершковий Песто, моцарела, гриби, Горгонзола, маслини</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">205<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">305<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/5meats-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Місто Карне — 5 видів м’яса</h3>
+                        <p class="products__content-item-text">Салямі, шинка, мисливські ковбаски, бекон, куряче філе, соус Помодоріні, сир Моцарела</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">235<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">345<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/cheesepizza-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Супер сирна — 5 видів сиру</h3>
+                        <p class="products__content-item-text">Моцарела, Рікота, Дор Блю, Чедер копчений, Пармезан, вершковий соус</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">225<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">330<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/tropicana-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Тропікана</h3>
+                        <p class="products__content-item-text">Ананас свіжий, соус Помодоріні, мариноване філе курча, моцарела, маслини, перець болгарський, копчене куряче філе</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">195<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">290<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/fish-icon.png" alt="">
+                            <div class="prompt-icon__text">морепродукти</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/solmone-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">СольМоне</h3>
+                        <p class="products__content-item-text">Сьомги філе, сир Рікота, моцарела, вершковий Песто, шпинат, чері, Пармезан</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">255<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">375<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/childpizza-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Дитяча</h3>
+                        <p class="products__content-item-text">Куряче філе, шинка, сосиска теляча молочна, вершковий (або томатний) соус, сир Моцарела фермерська</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">210<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">296<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon"><img src="" alt="">
+                            <div class="prompt-icon__text"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/peraparma-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Пера Парма</h3>
+                        <p class="products__content-item-text">Парма, груша, вершковий соус, сири Моцарела та Гарганзола, рукола</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">210<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">315<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/vegetarian-icon.png" alt="">
+                            <div class="prompt-icon__text">вегетаріанська</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/vegetarian-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Вегетаріанська</h3>
+                        <p class="products__content-item-text">Соус Помдоріні, Моцарела фермерська, цукіні, баклажан, помідори, гриби, маслини, артішоки та лист салату</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">175<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">270<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+                    <div class="products__content-item">
+                      <div class="products__content-item-img-block">
+                        <div class="products__content-item-additional"><img src="../img/pizza-icon.png" alt=""></div>
+                        <div class="products__content-item-prompt">
+                          <div class="prompt-icon" style="display:block;"><img src="../img/spicy-icon.png" alt="">
+                            <div class="prompt-icon__text">гострий смак</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="products__content-item-container">
+                        <div class="products__content-item-img"><img src="../img/pizza/taiskaya-card.png" alt=""></div>
+                        <h3 class="products__content-item-title">Тайська</h3>
+                        <p class="products__content-item-text">Мариноване у тайському соусі філе курча, арахіс, соус Помодоріні, цибуля, маринована морква, ніжна моцарела, петрушка</p>
+                        <div class="products__content-item-descr">
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">35см</div>
+                            <div class="products__content-item-descr-column-value">210<span>ГРН</span></div>
+                          </div>
+                          <div class="products__content-item-descr-column">
+                            <div class="products__content-item-descr-column-size">45см</div>
+                            <div class="products__content-item-descr-column-value">310<span>ГРН</span></div>
+                          </div>
+                        </div>
+                        <button class="products__content-item-btn">ЗАМОВИТИ</button>
+                      </div>
+                    </div>
+        </div>
+      </div>
+    </section>
+    <section class="legend">
+      <div class="container">
+        <div class="legend__sizing">
+          <div class="legend__sizing-text">СЕРЕДНЯ — <span>350мм ~ 0,55 кг</span></div>
+          <div class="legend__sizing-text">СІМЕЙНА велика — <span>450мм ~ 1 кг</span></div>
+        </div>
+        <div class="legend__prompts">
+          <div class="legend__prompts-item"><img src="../img/beer-icon.png" alt="">
+            <div class="legend__prompts-item-text">смакує до пива</div>
+          </div>
+          <div class="legend__prompts-item"><img src="../img/vegetarian-icon.png" alt="">
+            <div class="legend__prompts-item-text">вегетаріанська</div>
+          </div>
+          <div class="legend__prompts-item"><img src="../img/spicy-icon.png" alt="">
+            <div class="legend__prompts-item-text">гострий смак</div>
+          </div>
+          <div class="legend__prompts-item"><img src="../img/fish-icon.png" alt="">
+            <div class="legend__prompts-item-text">риба, морепродукти</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map__content">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1272.2111420441063!2d30.380263488782127!3d50.37732606418459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c92fb6f1fb01%3A0x41dcb7e1f387c581!2sMisto%20Kafe!5e0!3m2!1sru!2sua!4v1606210611064!5m2!1sru!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="600" height="450" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__content-address">
+            <h4 class="footer__content-address-title">Наша адреса</h4>
+            <div class="footer__content-address-text">
+              <p>с. Крюківщина, вул Жулянська, 1В</p>
+              <p>ЖК Євромісто</p>
+              <p>Україна, Київська область</p>
+            </div>
+          </div>
+          <div class="footer__content-socials">
+            <div class="footer__content-socials-item"><a class="facebook" href="https://www.facebook.com/hellomisto/"></a></div>
+            <div class="footer__content-socials-item"><a class="instagram" href="https://instagram.com/mistocafe_family?igshid=h0cabbylxt56"></a></div>
+            <div class="footer__content-socials-item"><a class="telegram" href="https://t.me/FamilyMistoCafe"></a></div>
+            <div class="footer__content-socials-item"><a class="viber" href="viber://chat?number=%2B380673030653"></a></div>
+          </div>
+          <div class="footer__content-contacts">
+            <h4 class="footer__content-contacts-title">Контакти</h4>
+            <div class="footer__content-contacts-phones"><a href="tel:+380673030653">+38 067 303 06 53</a><a href="tel:+380957341718">+38 095 734 17 18</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/main.min.js"></script>
+  </body>
+</html>

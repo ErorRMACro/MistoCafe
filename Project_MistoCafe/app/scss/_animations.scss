@@ -1,0 +1,138 @@
+@keyframes iconTremble{
+    0%{
+        transform: rotate(0deg);
+    }
+    15%{
+        transform: rotate(-2deg);
+    }
+    25%{
+        transform: rotate(2deg);
+    }
+    40%{
+        transform: rotate(-4deg);
+    }
+    55%{
+        transform: rotate(4deg);
+    }
+    65%{
+        transform: rotate(-2deg);
+    }
+    75%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes iconSwing{
+    0%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-1deg);
+    }
+    77%{
+        transform: rotate(1deg);
+    }
+    79%{
+        transform: rotate(-3deg);
+    }
+    81%{
+        transform: rotate(3deg);
+    }
+    83%{
+        transform: rotate(-5deg);
+    }
+    85%{
+        transform: rotate(5deg);
+    }
+    87%{
+        transform: rotate(-2deg);
+    }
+    89%{
+        transform: rotate(2deg);
+    }
+    91%{
+        transform: rotate(-1deg);
+    }
+    93%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes row1{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: unset;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(45deg);
+        transform-origin: 4.5px -1px;
+        opacity: .8;
+    }
+}
+
+@keyframes row2{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes row3{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: unset;
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-45deg);
+        transform-origin: -3px 0px;
+        opacity: .8;
+    }
+}
+
+@keyframes rowClose1{
+    0%{
+        transform: rotate(45deg);
+        transform-origin: 4px 0px;
+        opacity: .8;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: unset;
+        opacity: 1;
+    }
+}
+
+@keyframes rowClose2{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes rowClose3{
+    0%{
+        transform: rotate(-45deg);
+        transform-origin: 1px 2px;
+        opacity: .8;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: unset;
+        opacity: 1;
+    }
+}
