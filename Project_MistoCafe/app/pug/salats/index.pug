@@ -1,0 +1,40 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Стартери та салати - Misto Cafe
+    meta(name='description' content='Замовити cтартери та салати у Misto Cafe. Доставка у Вишневе, Крюківщина, Гатне. Салат Цезар, Капрезе з авокадо, цезаріні з креветками і не тільки - все це ми готуємо і доставляємо для Вас!')
+    meta(name='keywords' content='замовити салат, салат доставка, замовити салат вишневе, замовити салат крюківщина, салат доставка вишневе, салат доставка крюківщина, салат цезар замовити, стартери замовити, стартери доставка')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/salats-bg.jpg);')
+    section.products
+      .container
+        .products__title
+          | Стартери та салати
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/salats/salat-cherry.jpg', "Салат з телятиною-гриль з вишнями", 'Телятина - гриль, маринована вишня, листя салату, карамельозований бурячок, ніжний сир; Рікота, горіховий соус', '220', '145')
+
+          +productCard('../img/salats/salat-kapreze.jpg', "Капрезе з авокадо та соусом Песто", 'Телятина - гриль, маринована вишня, листя салату, карамельозований бурячок, ніжний сир; Рікота, горіховий соус', '230', '125')
+
+          +productCard('../img/salats/salatshrimp-card.jpg', "Цезаріна з креветками", 'Креветки тигрові, помідор, сир Грана Подана, яйце, соус Цезар', '250', '155')
+
+          +productCard('../img/salats/сaesar-card.jpg', "Цезар", 'Смажене куряче філе, помідор, сир Грана Подана, яйце, бекон, соус Цезар', '250', '135')
+
+          +productCard('../img/salats/salmonsalat-card.jpg', "Салат з лососем та авокадо", 'Лосось маринований, насіння кунжуту, листя салату, помідор, авокадо із соусом Вінегрет - лимон', '250', '135')
+
+          .products__content-item.products__content-item--null
+            .products__content-item-container
+
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

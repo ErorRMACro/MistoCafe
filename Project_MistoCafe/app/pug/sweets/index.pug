@@ -1,0 +1,40 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Десерти - Misto Cafe
+    meta(name='description' content='Замовити десерти у Misto Cafe. Доставка десертів у Вишневе, Крюківщина, Гатне. У нас Ви можете замовити свої улюбленні десерти: Ніжні і легкі тістечка, шоколадний фондан, смажені вафлі та сирники зі сметаною - цю смакоту ми готуємо для Вас!')
+    meta(name='keywords' content='десерти замовити, доставка десертів, замовити десерт вишневе, замовити десерт крюківщина, тістечко замовити, доставка тістечко, сирники замовити, сирники доставка')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/sweets-bg.jpg);')
+    section.products
+      .container
+        h3.products__title
+          | Солодке
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/sweets/cake-card.png', 'Ніжне та легке тістечко "Вишнева гірка"', '', '140', '90')
+
+          +productCard('../img/sweets/cake-card.png', 'Шоколадний фондан з морозивом', '', '90/50', '93')
+
+          +productCard('../img/sweets/cake-card.png', 'Смажені вафлі ЧУРРОС', 'Cоуси-наповнювачi на вибір: шоколад, полуниця, карамель, сгущене молоко', '100/35', '55')
+
+          +productCard('../img/sweets/cake-card.png', 'Сирнички зі сметаною', '', '150/30', '65')
+
+          +productCard('../img/sweets/cake-card.png', 'Шоколадне ніжне тістечко "Спартак"', 'За класичним рецептом', '120', '85')
+
+          .products__content-item.products__content-item--null
+            .products__content-item-container
+    
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

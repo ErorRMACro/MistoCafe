@@ -1,0 +1,40 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Паста - Misto Cafe
+    meta(name='description' content='Замовити пасту у Misto Cafe. Доставка пасти у Вишневе, Крюківщина, Гатне. Готуємо і доставляємо фірмову пасту на ваший смак та вибір. Пасти з куркою та креветками, з лососем, туна з оливками і не тільки - все це ми готуємо для Вас!')
+    meta(name='keywords' content='паста з ресторану, паста замовити, паста доставка, паста доставка вишневе, паста доставка крюківщина, паста з, паста з  замовити')
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+    include ../includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/pasta-bg.jpg);')
+    section.products
+      .container
+        h3.products__title
+          | ПАСТА
+        .products__content
+          include ../includes/cards.pug
+          //- (image, title, description, weight, value)
+
+          +productCard('../img/pasta/pasta-card.png', "Карбонара з яйцем", '', '320', '135')
+
+          +productCard('../img/pasta/pasta-card.png', "Туна", 'З оливками, помідорами, тунцем у томатному соусі', '300', '155')
+
+          +productCard('../img/pasta/pasta-card.png', "Трюфельна", 'З грибами  у вершковому соусі  із трюфельною сальсою', '300', '145')
+
+          +productCard('../img/pasta/pasta-card.png', "З лососем", 'У вершковому соусі з помідором та шпинатом', '300', '165')
+
+          +productCard('../img/pasta/pasta-card.png', "З куркою та креветками", 'У вершковому Песто з цукіні', '300', '155')
+
+          .products__content-item.products__content-item--null
+            .products__content-item-container
+
+    include ../includes/footer.pug
+    script(src='../js/main.min.js')

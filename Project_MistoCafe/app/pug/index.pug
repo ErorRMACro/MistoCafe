@@ -1,0 +1,78 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Ресторан у сімейному стилі — Misto Cafe
+    meta(name='description' content='Сімейне Misto Cafe - тут готують все, що ти любиш. Смакуй, співай та насолоджуйся разом з коханими та близькими. Доставка їжі з ресторану в Вишневе, Крюківщина, ЖК Євромісто, Гатне +38 (067) 3030653, +38 (095) 7341718')
+    meta(name='keywords' content='ресторан, кафе, ресторан крюківщина, кафе крюківщина, ресторан жк євромісто, кафе жк євромісто, євромісто, доставка їжі, піца, піца доставка, піцерія, замовити піцу, замовити піцу вишневе, замовити піцу крюківщина, піцерія доставка вишневе, піцерія доставка крюківщина')
+    link(rel='icon' href='img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='css/style.min.css')
+  body#home.body
+
+    include includes/header.pug
+    +headerlogo('background-image: url(../img/backgrounds/logo-bg.png);')
+    
+    section.categories
+      .container
+        h1.categories__title MENU
+        .categories__content
+          .categories__content-item-box
+            a.categories__content-item-link(href='pizza/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-pizza.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Піца
+          .categories__content-item-box
+            a.categories__content-item-link(href='salats/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-salats.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Салати
+          .categories__content-item-box
+            a.categories__content-item-link(href='first_meals/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-first_meals.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Перші страви
+          .categories__content-item-box
+            a.categories__content-item-link(href='pasta/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-pasta.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Пасти
+          .categories__content-item-box
+            a.categories__content-item-link(href='beer/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-beer.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title До пива
+          .categories__content-item-box
+            a.categories__content-item-link(href='burgers/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-burgers.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Бургери
+          .categories__content-item-box
+            a.categories__content-item-link(href='hot_meals/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-hot_meals.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Гарячі страви
+          .categories__content-item-box
+            a.categories__content-item-link(href='pans/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-pans.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Пательні
+          .categories__content-item-box
+            a.categories__content-item-link(href='children/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-children.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Для діточок
+          .categories__content-item-box
+            a.categories__content-item-link(href='sweets/')
+              .categories__content-item(style='background-image: url(img/menu_catregories/category-sweets.jpg);')
+                .categories__content-item-description
+                  h3.categories__content-item-description-title Солодке
+          .categories__content-item-box.categories__content-item.categories__content-item--hidden
+          .categories__content-item-box.categories__content-item.categories__content-item--hidden
+    include includes/footer.pug
+
+    script(src='js/main.min.js')

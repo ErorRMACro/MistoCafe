@@ -1,0 +1,109 @@
+doctype html
+html(lang='uk')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Піца - Misto Cafe
+    meta(name='description' content="Замовити піцу у Misto Cafe. Доставка піци у Вишневе, Крюківщина, Гатне. Унікальний рецепт тіста піци, Сирний бортик, М'ясні, Сирні, Вегетаріанські, Рибні піци на ваш смак та вибір!")
+    meta(name='keywords' content="доставка піци, піца доставка, піца, Піца, піцерія, піцерія вишневе, піцерія крюківщина, замовити піцу, піца замовити, замовити піцу вишневе, замовити піцу крюківщина, піцерія доставка вишневе, піцерія доставка крюківщина, м'ясна піца, піца з м'ясом, сирна піца, піца з сиром, вегетаріанська піца, рибна піца, піца з рибою, піца з сирним бортиком, сирний бортик піца, сирний бортик, піца до пива, гостра піца, піца з половинок, піца два смаки, піца з двома смаками, тонке тісто, піца з тонким тістом")
+    link(rel='icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='shortcut icon' href='../img/favicon.svg' type='image/x-icon')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Nunito:wght@300;400;500;600&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='../css/style.min.css')
+  body.body
+	
+    include ../includes/header.pug
+
+    +headerlogo('background-image: url(../img/backgrounds/pizza-bg.jpg);')
+    
+    section.offer
+      .container
+        .offer__content
+          .offer__titles
+            h1.offer__text-title
+              | ФІРМОВА пропозиція — два улюблених
+              | смаки поєднуй в одній 
+              span PIZZA
+              | !
+            img(src='../img/heart.png' alt='')
+            .offer__text-subtitle
+              | Кожна піца має право на СИРНИЙ БОРТИК
+              span
+                p 80 грам/40 грн
+                p 120 грам/60 грн
+          .offer__stock
+            img.offer__stock-img(src='../img/try.png' alt='')
+            .offer__stock-text 2-га пiца зi знижкою -50% у разі самовиносу!
+    section.products.products--pizza
+      .container
+        .products__content
+          include ../includes/cards.pug
+          
+          //- (iconImage, iconDescr, image, title, description, valueSmall, valueBig)
+
+          +pizzaCard('','', '', '../img/pizza/salami-card.jpg', 'Салямі', 'Моцарела фермерська, соус Помодоріні, томати, салямі Мілано', '195', '295')
+
+          +pizzaCard('display:block;', '../img/vegetarian-icon.png', 'вегетаріанська', '../img/pizza/margarita-card.png', 'Маргарита Капрезе', 'Моцарела Буфало, моцарела фермерська, соус Помодоріні, томати', '145', '210')
+
+          +pizzaCard('display:block;', '../img/fish-icon.png', 'морепродукти', '../img/pizza/gambaretti-card.png', 'Гамбаретті', 'Соус Помодоріні, два види Моцарели: фермерська та розсільна, помідори, рукола та креветки', '245', '355')
+
+          +pizzaCard('display:block;', '../img/vegetarian-icon.png', 'вегетаріанська', '../img/pizza/trufalie-card.png', 'Трюфальє', 'Моцарела, вершковий Песто, паста з маслин із трюфельною ароматною олією', '195', '290')
+
+          +pizzaCard('display:block;', '../img/beer-icon.png', 'смакує до пива', '../img/pizza/bavarian-card.png', 'Баварська', 'Ковбаски баварські, сосиски мюнхенські, моцарела фермерська, соус Помодоріні, огірок солоний, цибуля, соус гірчичний', '185', '280')
+
+          +pizzaCard('','', '', '../img/pizza/proshugo-card.png', 'Прошуто Фунгі', 'Шинка, моцарела, гриби, бекон, соус Помодоріні, синя цибуля', '190', '285')
+
+          +pizzaCard('display:block;', '../img/spicy-icon.png', 'гострий смак', '../img/pizza/paperoni-card.png', 'Папероні', 'Салямі пікантна Наполі, моцарела, соус Помодоріні, перець болгарський, Табаско', '190', '280')
+
+          +pizzaCard('','', '', '../img/pizza/kaprichio-card.png', 'Капрічо', 'Шинка, курка маринована, гриби, томати, цибуля, моцарела, соус Помодоріні, запікається з яйцем', '190', '280')
+
+          +pizzaCard('','', '', '../img/pizza/seasonspizza-card.png', 'Чотири сезони', 'Бекон, шинка, гриби, артішок, маслини, соус Помодоріні, моцарела', '210', '320')
+
+          +pizzaCard('display:block;', '../img/fish-icon.png', 'морепродукти', '../img/pizza/tuna-card.png', 'Туна', 'Моцарела, тунець, кримська цибуля, соус Помодоріні, моцарела росільна, оливки, рукола', '197', '295')
+
+          +pizzaCard('','', '', '../img/pizza/pestopolo-card.png', 'Песто Поло', 'Філе курча, вершковий Песто, моцарела, гриби, Горгонзола, маслини', '205', '305')
+
+          +pizzaCard('','', '', '../img/pizza/5meats-card.png', 'Місто Карне — 5 видів м’яса', 'Салямі, шинка, мисливські ковбаски, бекон, куряче філе, соус Помодоріні, сир Моцарела', '235', '345')
+
+          +pizzaCard('','', '', '../img/pizza/cheesepizza-card.png', 'Супер сирна — 5 видів сиру', 'Моцарела, Рікота, Дор Блю, Чедер копчений, Пармезан, вершковий соус', '225', '330')
+
+          +pizzaCard('','', '', '../img/pizza/tropicana-card.png', 'Тропікана', 'Ананас свіжий, соус Помодоріні, мариноване філе курча, моцарела, маслини, перець болгарський, копчене куряче філе', '195', '290')
+
+          +pizzaCard('display:block;', '../img/fish-icon.png', 'морепродукти', '../img/pizza/solmone-card.png', 'СольМоне', 'Сьомги філе, сир Рікота, моцарела, вершковий Песто, шпинат, чері, Пармезан', '255', '375')
+
+          +pizzaCard('','', '', '../img/pizza/childpizza-card.png', 'Дитяча', 'Куряче філе, шинка, сосиска теляча молочна, вершковий (або томатний) соус, сир Моцарела фермерська', '210', '296')
+
+          +pizzaCard('','', '', '../img/pizza/peraparma-card.png', 'Пера Парма', 'Парма, груша, вершковий соус, сири Моцарела та Гарганзола, рукола', '210', '315')
+
+          +pizzaCard('display:block;', '../img/vegetarian-icon.png', 'вегетаріанська', '../img/pizza/vegetarian-card.png', 'Вегетаріанська', 'Соус Помдоріні, Моцарела фермерська, цукіні, баклажан, помідори, гриби, маслини, артішоки та лист салату', '175', '270')
+
+          +pizzaCard('display:block;', '../img/spicy-icon.png', 'гострий смак', '../img/pizza/taiskaya-card.png', 'Тайська', 'Мариноване у тайському соусі філе курча, арахіс, соус Помодоріні, цибуля, маринована морква, ніжна моцарела, петрушка', '210', '310')
+
+    section.legend
+      .container
+        .legend__sizing
+          .legend__sizing-text
+            | СЕРЕДНЯ — 
+            span 350мм ~ 0,55 кг
+          .legend__sizing-text
+            | СІМЕЙНА велика — 
+            span 450мм ~ 1 кг
+        .legend__prompts
+          .legend__prompts-item
+            img(src='../img/beer-icon.png' alt='')
+            .legend__prompts-item-text смакує до пива
+          .legend__prompts-item
+            img(src='../img/vegetarian-icon.png' alt='')
+            .legend__prompts-item-text вегетаріанська
+          .legend__prompts-item
+            img(src='../img/spicy-icon.png' alt='')
+            .legend__prompts-item-text гострий смак
+          .legend__prompts-item
+            img(src='../img/fish-icon.png' alt='')
+            .legend__prompts-item-text риба, морепродукти
+    
+    include ../includes/footer.pug
+	
+    script(src='../js/main.min.js')
